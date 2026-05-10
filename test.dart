@@ -9,16 +9,7 @@ void main() {
 
   // List in Dart similar to array,, a collection of ordered object
   // list started with index no 0
-  var lst = [
-    'a',
-    'b',
-    'c',
-    2,
-    3.5,
-    9,
-    'Dhaka',
-    'last data',
-  ]; // growable list,, can add more element/item later
+  var lst = ['a','b','c',2,3.5,9,'Dhaka','last data']; // growable list,, can add more element/item later
   const lst2 = ['x', 9, 'nabil']; // Fixed list,, cant add more items letter
 
   print(lst);
@@ -28,11 +19,7 @@ void main() {
   var rev = lst.reversed;
 
   lst.add('data inserted'); // to add single data at last position
-  lst.addAll([
-    'data1',
-    'data2',
-    'data3',
-  ]); // to add multiple data end of the list
+  lst.addAll(['data1','data2','data3']); // to add multiple data end of the list
   lst.insert(2, 'd'); // add data ind 2nd/any position,, 0 based
   lst.insertAll(2, ['e', 'f', 'g']); // insert multiple data
 
@@ -40,10 +27,7 @@ void main() {
   lst.removeLast();
   lst.remove(2); // value dhore remove kore
   lst.removeAt(0); // index position dhore
-  lst.removeRange(
-    1,
-    3,
-  ); // removeRange(start, end) → start index থেকে end index এর আগ পর্যন্ত remove করে
+  lst.removeRange(1,3); // removeRange(start, end) → start index থেকে end index এর আগ পর্যন্ত remove করে
 
   List<int> nums = [1, 2, 3, 4, 5, 6];
   nums.removeWhere(

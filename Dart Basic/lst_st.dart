@@ -1,5 +1,5 @@
 main() {
-  // [ ] = list, start index from 0
+  // [ ] = list, start index from 0,, duplicat value allow kore
 
   var list = []; // [] theke auto list hisabe detect kore
   List lst = [
@@ -27,4 +27,41 @@ main() {
   l.runtimeType; // data type
 
   // ----------------------------------------------------------------------------------
+
+  // = { } SET, unordered collection,, dont allow to store duplicate value,, 0 index
+  var set = {};
+  Set stt = {'name', 256, 32.23, true, 'this is value'};
+  Set<String> st = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+  st.add('h');
+  st.addAll({'i', 'j', 'k'});
+  st.remove('b');
+  st.removeAll({'a', 'c', 'd'}); // diresct shb remove hoye na,, data lage
+  st.contains('g'); // if exixst retuen true
+  st.containsAll({
+    'f',
+    'g',
+    'i',
+  }); // if all true only then will return true else false
+  st.elementAt(2); // 0 index wise access kore
+  st.length; // length return koe
+  st.isEmpty; // empty kina khuje
+  var st_to_lst = st.toList(); // converted set to list
+
+  Set<String> st2 = {'a', 'f', 'g', 'i', 'm'};
+  st.intersection(st2); // cmmon
+  st.union(st2); // all
+
+  // ----------------------------------------------------------------------------------
+
+  // = { key : value } pair = Map,, both key and val can be any type
+
+  Map<String, String> person = {
+    'name': 'Nabil',
+    'age': '24',
+    'address': 'gazipur',
+    'ex': '3yr',
+  };
+  
+  
+
 }

@@ -61,7 +61,9 @@ main() {
     'address': 'gazipur',
     'ex': '3yr',
   };
-  
-  
-
+  person.keys;
+  person.values;
+  person.addAll({'num': '01881196146', 'blood': 'O+'});
+  person.remove('address');
+  person.clear(); // empty map
 }

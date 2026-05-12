@@ -1,9 +1,8 @@
 main() {
   // পরে ডাটা এসাইন করার জন্য ফাকা রাকা হয়
-  late String
-  name; // class field এ বেশি common,, like kono function e data pore assign hbe but agei variable/list/anything set kore rakhlam
+  late String name; // class field এ বেশি common,, like kono function e data pore assign hbe but agei variable/list/anything set kore rakhlam
   // null         vs      late
-  // can be empty       cannot be empty//
+  // can be empty       cannot be empty
   // use ?              use late
   // no issue           issue
   // null               error

@@ -1,0 +1,25 @@
+git init -> to initialize git in the folder
+git add folder_name -> ad selected folder
+git add . -> to add all folder
+git commit -m "first commit" -> -m → commit already staged files
+git commit -am "first commit" -> -am → auto-stage modified tracked files, not new files
+git remote add origin (repo link) -> where to commit codes
+git branch -M main -> -M = rename (force) current branch-এর নাম force করে main করবে
+git push -u origin main -> -u = future এ শুধু git push দিলেই হবে
+git push origin main -> এটা কাজ করবে, কিন্তু Git মনে রাখবে না,, তাই next time আবার লিখতে হবে:
+git status -> last file edit/update status show kre
+git diff -> last edit more detail e show kore
+git log -> history show kore
+git log -p -- folder/file -> specific file er history show kore
+git branch -> jeshb branch ache ta show klore
+git branch login -> login nm e new branch create hyse
+git checkout login(branch name) -> login branch e dhukse // code commit kora na thake remove hoyur jabe
+git switch main(branch name) -> main brancvh eback ahschi // better uses
+git merge origin/main // merge github er setting theke krte hbe
+merge korar pore conflict solve korar jonno code theke select krte hbe
+git restore -> ager commit restore kore
+git reset -> unstage hoye jay / add theke batil hoye jay
+git reset --soft branch_name -> commit undo
+git reset --hard HEAD=1 (commit_code_id) -> roleback / specific commit e come back
+git revert ->  firaiye ane
+
